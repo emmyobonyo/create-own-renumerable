@@ -1,43 +1,43 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Create own renumerable
 
-> One paragraph statement about the project.
-
-![screenshot](./app_screenshot.png)
-
-Additional description about the project and its features.
+> A custom renumerable that we built
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Ruby
 
-## Live Demo
+# Set Up
+## Clone This Repository
+```
+$ git clone https://github.com/emmyobonyo/create-own-renumerable.git
+$ cd create-own-renumerable
+```
 
-[Live Demo Link](https://livedemo.com)
+## Test Project
+```
+irb> list = MyList.new(1, 2, 3, 4)
+=> #<MyList: @list=[1, 2, 3, 4]>
 
+# Test #all?
+irb> list.all? {|e| e < 5}
+=> true
+irb> list.all? {|e| e > 5}
+=> false
 
-## Getting Started
+# Test #any?
+irb> list.any? {|e| e == 2}
+=> true
+irb> list.any? {|e| e == 5}
+=> false
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+# Test #filter
+irb> list.filter {|e| e.even?}
+=> [2, 4]
 
+```
 
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
 
 
 
@@ -45,13 +45,13 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@emmyobonyo](https://github.com/githubhandle)
+- Twitter: [@emmyobonyo](https://twitter.com/twitterhandle)
+- LinkedIn: [Emmanuel Obonyo](https://linkedin.com/in/linkedinhandle)
 
 👤 **Author2**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
+- GitHub: [@lily-coder](https://github.com/lily-coder)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
