@@ -1,4 +1,3 @@
-# module myEnumerable
 module MyEnumerable
   def any?
     each do |item|
